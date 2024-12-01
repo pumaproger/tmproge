@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 12% 4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+:root {
+  --bg-color: #000000;
+  --second-bg-color: #131313;
+  --text-color: #fff;
+  --main-color: #00ffee;
+}
+.navbar a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.navbar a:active {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+#menu-icon {
+  fill: var(--main-color);
+  width: 57px;
+  height: 57px;
+  display: none;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+span {
+  color: var(--main-color);
+}
+.heading {
+  font-size: 8rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+.logo {
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.logo span {
+  text-shadow: 0 0 25px var(--main-color);
+}
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+}
+@media (max-width: 575px) {
+  .header a {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 895px) {
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    width: 50%;
+    padding: 1rem 3%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #fff;
+  }
+  .navbar.active {
+    display: block;
+  }
+}

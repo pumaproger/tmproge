@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("./assets/fonts/Poppins-Black.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./assets/fonts/Poppins-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("./assets/fonts/Poppins-ExtraLight.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./assets/fonts/Poppins-Light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./assets/fonts/Poppins-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("./assets/fonts/Poppins-Thin.ttf") format("ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Дополнительные стили */
+body {
+  background-color: #fff;
+}
